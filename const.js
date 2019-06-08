@@ -1,12 +1,21 @@
 const env = require('./env')
 let resUrl
 let mp3FilePath
+let dbHost
+let dbUser
+let dbPwd
 if (env === 'dev') {
     resUrl = 'http://172.20.81.135:8081'
     mp3FilePath = '/Users/jin/upload/mp3'
+    dbHost = 'localhost'
+    dbUser = 'root'
+    dbPwd = '12345'
 } else if (env === 'prod') {
     resUrl = 'http://120.78.222.89'
     mp3FilePath = '/root/nginx/upload/mp3'
+    dbHost = '120.78.222.89'
+    dbUser = 'root'
+    dbPwd = 'Wushijin_123'
 }
 
 const category = [
@@ -36,5 +45,8 @@ const category = [
 module.exports = {
     resUrl,
     category,
-    mp3FilePath
+    mp3FilePath,
+    dbHost,
+    dbUser,
+    dbPwd
 }
