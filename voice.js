@@ -7,10 +7,10 @@ const resUrl = require('./const').resUrl
 const fs = require('fs')
 
 function createVoice(req, res) {
-  // const text = req.query.text
-  // const lang = req.query.lang
-  const text = '测试科大讯飞在线语音合成api的功能，比如说，我们输入一段话，科大讯飞api会在线实时生成语音返回给客户端'
-  const lang = 'cn'
+  const text = req.query.text
+  const lang = req.query.lang
+  // const text = '测试科大讯飞在线语音合成api的功能，比如说，我们输入一段话，科大讯飞api会在线实时生成语音返回给客户端'
+  // const lang = 'cn'
 
   let engineType = 'intp65'
   if (lang.toLowerCase() === 'en') {
