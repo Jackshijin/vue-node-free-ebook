@@ -11,9 +11,9 @@ if (env === 'dev') {
     dbUser = 'root'
     dbPwd = '12345'
 } else if (env === 'prod') {
-    resUrl = 'http://120.78.222.89'
+    resUrl = 'http://120.78.15.79'
     mp3FilePath = '/root/nginx/upload/mp3'
-    dbHost = '120.78.222.89'
+    dbHost = '120.78.15.79'
     dbUser = 'root'
     dbPwd = 'Wushijin_123'
 }
